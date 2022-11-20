@@ -1,0 +1,22 @@
+# PLAN
+
+**Tic Tac Toe**
+*Player configuration*
+Make a tic tac toe game in which you you give 2 players as the arguments.
+Then make a function to start the game.
+First thing it does is get the name for each player.
+Then it gets game marker from the player making sure its not a number, and its one character.
+It also makes sure the marker is not the same as the other players.
+After the player selection is done it shows the board which is numbered 1-9. It uses user input based on the board, and does so for each player until a player wins or all the spots on the board are filled.
+
+*Board checker*
+The board is check ever move to see if someone has won.
+It calls a function which checks for 3 consecutive marks diagonally
+and vertically. It does so by mode(diagonal, horizontal, vertical) and then checks for the marks, if there are 3 of the same marks it returns the marker otherwise it returns nil.
+
+*Game loop*
+The game is played in a loop. It checks if the game is won or tied.
+If it is it breaks the loop, otherwise it continues the game by getting the current player choice, changing between both.
+
+**Player class**
+Creates a new player object with an attr_accessor for name and marker.
